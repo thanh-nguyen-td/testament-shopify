@@ -209,6 +209,46 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "166424989507176cef": {
+      "type": "collection-list",
+      "blocks": {
+        "1664249895df931d2e-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "home-page"
+          }
+        },
+        "1664249895df931d2e-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "shirt"
+          }
+        },
+        "1664249895df931d2e-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "shoes-1"
+          }
+        }
+      },
+      "block_order": [
+        "1664249895df931d2e-0",
+        "1664249895df931d2e-1",
+        "1664249895df931d2e-2"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -217,6 +257,7 @@
     "featured_collection",
     "collage",
     "video",
-    "multicolumn"
+    "multicolumn",
+    "166424989507176cef"
   ]
 }
