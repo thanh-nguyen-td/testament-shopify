@@ -80,6 +80,17 @@
         "label": "t:settings_schema.colors.settings.colors_background_2.label"
       },
       {
+        "type": "color",
+        "id": "colors_background_transparent",
+        "default": "transparent",
+        "label": "bg_transparent"
+      },
+      {
+        "id": "gradient_background_2",
+        "type": "color_background",
+        "label": "t:settings_schema.colors.settings.gradient_background_2.label"
+      },
+      {
         "id": "gradient_background_2",
         "type": "color_background",
         "label": "t:settings_schema.colors.settings.gradient_background_2.label"
