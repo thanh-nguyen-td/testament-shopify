@@ -11,6 +11,8 @@
             "heading_size": "h0",
             "subheading": "Tell your brand's story through images",
             "button_label": "Button label",
+            "button_label_2": "Button label 2",
+            "link_2": "",
             "link": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
@@ -29,6 +31,8 @@
             "heading_size": "h0",
             "subheading": "Tell your brand's story through images",
             "button_label": "Button label",
+            "button_label_2": "Button label 2",
+            "link_2": "",
             "link": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
@@ -100,23 +104,43 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Talk about your brand<\/p>",
-            "heading_size": "h1"
+            "heading": "<p>FALL SALE NOW ON<\/p>",
+            "heading_size": "h0"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Take 50% off a range of goods in our end of season sale.<\/p>"
+          }
+        },
+        "eaab4b22-cd08-413c-99af-d3ce9cdf08bf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All sales final - ends soon!<\/p>"
+          }
+        },
+        "355eb548-665c-4656-aa98-9b3bacfb58af": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
         "heading",
-        "text"
+        "text",
+        "eaab4b22-cd08-413c-99af-d3ce9cdf08bf",
+        "355eb548-665c-4656-aa98-9b3bacfb58af"
       ],
       "settings": {
         "desktop_content_position": "center",
+        "type_rich_text": "1",
         "content_alignment": "center",
         "color_scheme": "background-1",
         "full_width": true,
