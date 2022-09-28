@@ -20,7 +20,8 @@
 
 <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
   <div  class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
-    <div style="background: red;" class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
+
+    <div  class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
       <div class="rich-text__blocks {{ section.settings.content_alignment }}">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
@@ -78,6 +79,22 @@
       "default": "center",
       "label": "t:sections.rich-text.settings.desktop_content_position.label",
       "info": "t:sections.rich-text.settings.desktop_content_position.info"
+    },
+    {
+      "type": "radio",
+      "id": "type_rich_text",
+      "label": "Type Rich Text",
+      "options": [
+        {
+          "value": 1,
+          "label": "Type 1"
+        },
+        {
+          "value": 2,
+          "label": "Type 2"
+        },
+      ],
+      "default": 1
     },
     {
       "type": "select",
