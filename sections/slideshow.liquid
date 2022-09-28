@@ -5,6 +5,44 @@
 
 {%- if section.settings.slide_height == 'adapt_image' and section.blocks.first.settings.image != blank -%}
   {%- style -%}
+
+.banner__heading,
+.banner__text {
+  color:#fff !important;
+}
+.banner__buttons a {
+ background:#fff;
+ opacity:1 !important
+}
+.custom-button{
+  padding:10px 20px;
+  font-size:16px;
+  text-decoration: none;
+  
+  border-radius:3px;
+}
+.custom-color-white{
+  background:#fff;
+  color:#8b5a47;
+  border:1px solid #fff;
+}
+.custom-color-white:hover{
+  background:transparent;
+  border:1px solid #fff;
+  color:#fff
+}
+
+.custom-color-black{
+  background:#000;
+  color:#fff;
+  border:1px solid #000;
+  margin:5px
+}
+.custom-color-black:hover{
+  background:transparent;
+  border:1px solid #000;
+  color:#000
+}
   @media screen and (max-width: 749px) {
     #Slider-{{ section.id }}::before,
     #Slider-{{ section.id }} .media::before,
@@ -105,7 +143,7 @@
         <div class="slideshow__text-wrapper banner__content banner__content--{{ block.settings.box_align }} page-width{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
           <div class="slideshow__text banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">
             {%- if block.settings.heading != blank -%}
-              <h2 class="banner__heading {{ block.settings.heading_size }}">{{ block.settings.heading | escape }}</h2>
+              <h2  class="banner__heading {{ block.settings.heading_size }}">{{ block.settings.heading | escape }}</h2>
             {%- endif -%}
             {%- if block.settings.subheading != blank -%}
               <div class="banner__text" {{ block.shopify_attributes }}>
@@ -113,9 +151,24 @@
               </div>
             {%- endif -%}
             {%- if block.settings.button_label != blank -%}
-              <div class="banner__buttons">
+              <!-- <div class="banner__buttons">
                 <a{% if block.settings.link %} href="{{ block.settings.link }}"{% else %} role="link" aria-disabled="true"{% endif %} class="button {% if block.settings.button_style_secondary %}button--secondary{% else %}button--primary{% endif %}">{{ block.settings.button_label | escape }}</a>
-              </div>
+              </div> -->
+              {% if forloop.index == 1 %}
+                <a href="{{block.settings.link}}" class="custom-button custom-color-white" style="{{custom-style}}">
+                  {{block.settings.button_label}}
+                </a>
+              {% else %}
+                  <div>
+                    <a href="{{block.settings.link}}" class="custom-button custom-color-black" style="{{custom-style}}">
+                      {{block.settings.button_label}}
+                    </a>
+                    <a href="{{block.settings.link_2}}" class="custom-button custom-color-black" style="{{custom-style}}">
+                      {{block.settings.button_label_2}}
+                    </a>
+                  </div>
+              {% endif %}
+            
             {%- endif -%}
           </div>
         </div>
@@ -322,6 +375,17 @@
           "default": "Button label",
           "label": "t:sections.slideshow.blocks.slide.settings.button_label.label",
           "info": "t:sections.slideshow.blocks.slide.settings.button_label.info"
+        },
+        {
+          "type": "text",
+          "id": "button_label_2",
+          "default": "Button label 2",
+          "label": "text button 2"
+        },
+        {
+          "type": "url",
+          "id": "link_2",
+          "label": "link button 2"
         },
         {
           "type": "url",

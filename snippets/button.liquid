@@ -1,0 +1,21 @@
+{% comment %}
+
+  Renders a button
+
+  Accepts:
+  - custom-style: add style
+ 
+  Usage:
+  {% render 'button',custom-style:'color:red;background:pink' %}
+
+{% endcomment %}
+{% style %}
+.custom-button{
+    padding:10px 20px;
+    font-size:16px;
+    text-decoration: none;
+}
+{% endstyle %}
+<a href="{{link}}" class="custom-button" style="{{custom-style}}">
+   {{content}}
+</a>
