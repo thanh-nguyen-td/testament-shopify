@@ -138,10 +138,10 @@
             </span>
           </summary>
           <div id="menu-drawer" class="gradient menu-drawer motion-reduce" tabindex="-1">
-            <div  style="background: red;" class="menu-drawer__inner-container">
-              <div  style="background: red;" class="menu-drawer__navigation-container">
-                <nav  style="background: red;" class="menu-drawer__navigation">
-                  <ul  style="background: red;" class="menu-drawer__menu has-submenu list-menu" role="list">
+            <div class="menu-drawer__inner-container">
+              <div class="menu-drawer__navigation-container">
+                <nav class="menu-drawer__navigation">
+                  <ul class="menu-drawer__menu has-submenu list-menu" role="list">
                     {%- for link in section.settings.menu.links -%}
                       <li>
                         {%- if link.links != blank -%}
@@ -399,7 +399,7 @@
 
     {%- if section.settings.menu != blank -%}
       {%- if section.settings.menu_type_desktop == 'dropdown' -%}
-        <nav  style="background: #000; width: 100%; display: flex;justify-content: center;align-items: center;"  class="header__inline-menu">
+        <nav    class="header__inline-menu">
           <ul class="list-menu list-menu--inline" role="list">
             {%- for link in section.settings.menu.links -%}
               <li >
@@ -449,7 +449,7 @@
           </ul>
         </nav>
       {%- else -%}
-        <nav style="background: pink;" class="header__inline-menu">
+        <nav class="header__inline-menu">
           <ul class="list-menu list-menu--inline" role="list">
             {%- for link in section.settings.menu.links -%}
               <li>

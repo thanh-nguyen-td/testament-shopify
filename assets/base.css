@@ -2599,7 +2599,16 @@ details[open] > .header__submenu {
 .header__inline-menu {
   margin-left: -1.2rem;
   grid-area: navigation;
-  display: none;
+  display: flex !important;
+  background: #000;
+  width: 100%; 
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width:990px) {
+  .header__inline-menu {
+    display: none !important;
+  }
 }
 
 .header--top-center .header__inline-menu,
