@@ -8,7 +8,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/testament__hero-slide-2_3024x_1d0f81b0-2295-4243-9fcd-ea7c4a606a19.webp",
             "heading": "Image slide",
-            "heading_size": "h1",
+            "heading_size": "h0",
             "subheading": "Tell your brand's story through images",
             "button_label": "Button label",
             "link": "",
@@ -26,7 +26,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/1111111.webp",
             "heading": "Image slide",
-            "heading_size": "h1",
+            "heading_size": "h0",
             "subheading": "Tell your brand's story through images",
             "button_label": "Button label",
             "link": "",
