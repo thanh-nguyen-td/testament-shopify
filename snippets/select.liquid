@@ -1,0 +1,53 @@
+<div>
+    {% form 'localization', id:"localization_form_tag" %}
+        <button>{{form.current_locale.endonym_name}}</button>
+        <div>
+            <div style="display: flex;align-items:center;">
+                <!-- <select class="custom-select-none" style="padding-left:10px ;margin-right: px;">
+                  <option value="EUR">🇪🇺 VND</option>
+                  <option value="GBP">🇬🇧 YEN</option>
+                  <option value="USD">🇺🇸 USD</option>
+                </select> -->
+                <select class="custom-select-none" name="selecttype" id="haha" style="padding-left:10px ;margin-right: px;">
+                    {% for locale in shop.published_locales %}
+                    <option value="{{locale.iso_code}}" id="localeItem" lang="{{locale.iso_code}}">
+                        <a href="#" id="localeItem" lang="{{locale.iso_code}}">{{locale.endonym_name}}</a>
+                    </option>
+                    <!-- <a href="#" id="localeItem" lang="{{locale.iso_code}}">{{locale.endonym_name}}</a> -->
+                {% endfor %}
+                  </select>
+              </div>
+            <select>
+                <option value="he">thanh</option>
+                <option value="hi">thanh11</option>
+            </select>
+            {% for locale in shop.published_locales %}
+                <a href="#" id="localeItem" lang="{{locale.iso_code}}">{{locale.endonym_name}}</a>
+            {% endfor %}
+            <input type="hidden" name="locale_code" value="form.current_locale.iso_code" id="localeCode"/>
+        </div>
+    {% endform %}
+</div>
+
+<script>
+    document.querySelectorAll("#localeItem").forEach(item => {
+        item.addEventListener("click", event => {
+        document.getElementById("localeCode").value = item.getAttribute("lang");
+        document.getElementById("localization_form_tag").submit();
+        })
+    });
+   console.log(' document.getElementById',  document.getElementById('haha').value)
+
+   $("#logvalues").click(function() {
+   $("option:selected").each(function(){
+      console.log($("option:selected").val());
+  });
+})
+</script>
+
+{% style %}
+.custom-select-none{
+    border: 0px !important;
+    background: transparent;
+}
+{% endstyle %}
