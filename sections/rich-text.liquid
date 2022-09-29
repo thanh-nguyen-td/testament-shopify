@@ -5,14 +5,14 @@
 <noscript>{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
-.custom-button{
+.custom-button-1{
   padding:10px 20px;
   font-size:16px;
   text-decoration: none;
   border:1px solid #000;
   color:#000
 }
-.custom-button:hover{
+.custom-button-1:hover{
   background:#000;
   color:#fff
 }
@@ -114,7 +114,7 @@
                     {% if block.type == 'button' %}
                       <div  class="wrap-button rich-text__buttons{% if block.settings.button_label != blank and block.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
                         {%- if block.settings.button_label != blank -%}
-                        <a class="custom-button"  href="{{ block.settings.button_link }}">{{ block.settings.button_label | escape }}</a>
+                        <a class="custom-button-1"  href="{{ block.settings.button_link }}">{{ block.settings.button_label | escape }}</a>
                           <!-- <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label | escape }}</a> -->
                         {%- endif -%}
                         {%- if block.settings.button_label_2 != blank -%}
