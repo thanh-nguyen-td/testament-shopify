@@ -50,6 +50,7 @@
       ],
       "settings": {
         "layout": "full_bleed",
+        "type_slide": "1",
         "slide_height": "adapt_image",
         "slider_visual": "counter",
         "auto_rotate": false,
@@ -303,6 +304,7 @@
       ],
       "settings": {
         "layout": "full_bleed",
+        "type_slide": "2",
         "slide_height": "adapt_image",
         "slider_visual": "counter",
         "auto_rotate": false,
