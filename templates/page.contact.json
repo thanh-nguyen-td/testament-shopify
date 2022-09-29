@@ -1,10 +1,25 @@
 {
   "sections": {
+    "166444796140990b83": {
+      "type": "image-banner",
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 28,
+        "padding_bottom": 4
       }
     },
     "form": {
@@ -95,6 +110,7 @@
     }
   },
   "order": [
+    "166444796140990b83",
     "main",
     "form",
     "1664447813f7b91972",
