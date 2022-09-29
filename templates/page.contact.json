@@ -57,6 +57,15 @@
         "padding_bottom": 36
       }
     },
+    "1664447855925170d5": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "background-1",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
     "16644478213c628faa": {
       "type": "featured-collection",
       "settings": {
@@ -89,6 +98,7 @@
     "main",
     "form",
     "1664447813f7b91972",
+    "1664447855925170d5",
     "16644478213c628faa"
   ]
 }
