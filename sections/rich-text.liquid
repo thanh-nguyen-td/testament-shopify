@@ -16,9 +16,38 @@
   background:#000;
   color:#fff
 }
+
+.container-rich-text{
+  grid-template-columns: 3fr 4fr;
+  display: grid;
+  height: 100%;
+}
+.left{
+  padding-left: 50px;
+  border-left:1px solid #999 ;
+}
+.wrap-button{
+  justify-content:flex-start;
+  margin-top: 20px;
+}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (max-width: 990px) {
+    .container-rich-text{
+      grid-template-columns: 1fr;
+    }
+    .left{
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     flex-direction: column;
+     border-left:0
+    }
+    .wrap-button{
+      justify-content:center;
+    }
   }
 
   @media screen and (min-width: 750px) {
@@ -64,13 +93,13 @@
     {% else %}
           <div style="background:#f1e8e2; height: 100%; padding: 40px 0;">
            
-              <div  class="page-width" style="grid-template-columns: 3fr 4fr;display: grid;height: 100%;">
+              <div  class="page-width container-rich-text">
                 <div style="display: flex;justify-content: center;align-items: center;">
-                    <h2 style="" class="rich-text__heading rte {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+                    <h2 style="font-size:40px" class="rich-text__heading rte {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
                       {{ section.blocks.first.settings.heading | replace: 'p>', 'span>' }}
                     </h2>
                 </div>
-                <div style=" padding-left: 50px;">
+                <div class="left">
                   {%- for block in section.blocks -%}
                     {% if block.type == 'caption'%}
                       <p class="rich-text__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}" {{ block.shopify_attributes }}>
@@ -83,7 +112,7 @@
                       </div>
                     {% endif %}
                     {% if block.type == 'button' %}
-                      <div style="justify-content:flex-start;margin-top: 20px;" class="rich-text__buttons{% if block.settings.button_label != blank and block.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
+                      <div  class="wrap-button rich-text__buttons{% if block.settings.button_label != blank and block.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
                         {%- if block.settings.button_label != blank -%}
                         <a class="custom-button"  href="{{ block.settings.button_link }}">{{ block.settings.button_label | escape }}</a>
                           <!-- <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label | escape }}</a> -->
