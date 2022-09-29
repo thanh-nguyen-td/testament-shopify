@@ -1,4 +1,75 @@
-<div>TT</div>
+{% style %}
+.img-wrapper {  
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+  }
+.img-zoom {
+    width:100%;
+    height:100%;
+    transition:all 0.5s
+}
+.img-zoom:hover {
+    transform:scale(1.1)
+}
+.top-grid{
+    grid-template-columns: 1fr 1fr; 
+    display: grid;
+}
+.bot-grid{
+    grid-template-columns: 1fr 1fr 1fr; 
+    display: grid;
+}
+.bot-wrap-text{
+    padding: 0 30px; 
+    display:flex; 
+    justify-content:center;
+    flex-direction:column
+}
+
+@media screen and (max-width:990px){
+    .top-grid{
+        grid-template-columns: 1fr; 
+        display: grid;
+    }
+    .bot-grid{
+        grid-template-columns: 1fr; 
+        display: grid;
+    }
+    .bot-wrap-text{
+        padding: 20px 30px; 
+        display:flex; 
+    }
+}
+{% endstyle %}
+<div style="padding: 20px;">
+    <div >
+        <div class="top-grid">
+            <div class="img-wrapper">
+                <img class="img-zoom" src="https://cdn.shopify.com/s/files/1/0352/5133/files/testament__hero-iwto-1_1296x.jpg?v=1614964682"/>
+            </div>
+            <div class="img-wrapper">
+                <img  class="img-zoom" src="https://cdn.shopify.com/s/files/1/0352/5133/files/testament__hero-block-5_1296x.jpg?v=1614968551"/>
+            </div>
+        </div>
+        <div class="bot-grid">
+            <div class="bot-wrap-text">
+                <h2>Shop Our Collections</h2>
+                <h4>We are proud to present the best products
+                    From the worlds most talented designers of
+                    high quality goods.
+                </h4>
+                <a href="#" style="color:#000; font-size:13px">Explore the range</a>
+            </div>
+            <div class="img-wrapper">
+                <img  class="img-zoom" src="https://cdn.shopify.com/s/files/1/0352/5133/files/testament__hero-gallery-3_1080x.jpg?v=1614963685"/>
+            </div>
+            <div class="img-wrapper">
+                <img  class="img-zoom" src="https://cdn.shopify.com/s/files/1/0352/5133/files/testament__hero-gallery-4_1080x.jpg?v=1614969510"/>
+            </div>
+        </div>
+    </div>
+</div>
 {% schema %}
 {
     "name":"List Img",
