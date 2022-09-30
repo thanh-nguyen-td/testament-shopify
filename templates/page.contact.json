@@ -32,6 +32,42 @@
         "padding_bottom": 36
       }
     },
+    "1664447855925170d5": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "background-1",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "16644478213c628faa": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Or view our collections",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "shoes-1",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "1664447813f7b91972": {
       "type": "collection-list",
       "blocks": {
@@ -71,50 +107,14 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "1664447855925170d5": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "",
-        "color_scheme": "background-1",
-        "padding_top": 32,
-        "padding_bottom": 32
-      }
-    },
-    "16644478213c628faa": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Or view our collections",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "shoes-1",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "166444796140990b83",
     "main",
     "form",
-    "1664447813f7b91972",
     "1664447855925170d5",
-    "16644478213c628faa"
+    "16644478213c628faa",
+    "1664447813f7b91972"
   ]
 }
