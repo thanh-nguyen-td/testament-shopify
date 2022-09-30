@@ -16,6 +16,37 @@
         "show_text_below": true
       }
     },
+    "1664531699badd3244": {
+      "type": "rich-text",
+      "blocks": {
+        "1664531699d3ca32ac-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Journal<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "1664531699d3ca32ac-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Get the inside scoop and the latest fashion advice<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1664531699d3ca32ac-0",
+        "1664531699d3ca32ac-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "type_rich_text": "1",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
     "main": {
       "type": "main-blog",
       "settings": {
@@ -24,8 +55,8 @@
         "image_height": "medium",
         "show_date": true,
         "show_author": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 12,
+        "padding_bottom": 16
       }
     },
     "16644481578e1614b4": {
@@ -65,6 +96,7 @@
   },
   "order": [
     "1664448139245a7d13",
+    "1664531699badd3244",
     "main",
     "16644481578e1614b4"
   ]
